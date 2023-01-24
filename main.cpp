@@ -134,10 +134,10 @@ int main()
 	// 1 - Туз
 
 	srand(time(NULL));
-	// ^^^ Штуковина что-бы рандом работал от времени
+	
 
 	HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
-	// ^^^ Не снова шарю что это точно делает но это нужно для того что-бы красить текст
+	// Для покраса текста
 
 	while (game == true) {
 
@@ -332,7 +332,7 @@ int main()
 							PLAYER1_CARD_COUNT += 1;
 							PLAYER1CARDS[i] = randomcardvar;
 
-							// САМЫЙ ИЗИЧНЫЙ ПОДСЧЕТ КАРТ, ЛОЛ
+							// Подсчет карт
 							if (randomcardvar > 10) {
 								PLAYER1POINTS += 10;
 							}
@@ -367,7 +367,7 @@ int main()
 							PLAYER2_CARD_COUNT += 1;
 							PLAYER2CARDS[i] = randomcardvar;
 
-							// САМЫЙ ИЗИЧНЫЙ ПОДСЧЕТ КАРТ, ЛОЛ
+							// Подсчет карт
 							if (randomcardvar > 10) {
 								PLAYER2POINTS += 10;
 							}
